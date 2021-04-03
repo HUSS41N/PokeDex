@@ -9,12 +9,19 @@ html {
 }
 body {
 	font-family: "Lato", sans-serif;
-	/* background-color: rgb(241, 231, 231); */
+	background-color: #ede7e3;
 }
 .dark {
-	transition: 0.15s ease-in-out;
-	background-color: #000;
+	transition: 0.05s ease-in-out;
+	background-color: #264653;
 }
+.dark .card {
+	-webkit-box-shadow: 0px 0px 5px 0px rgba(50, 50, 50, 0.75);
+	-moz-box-shadow: 0px 0px 5px 0px rgba(50, 50, 50, 0.75);
+	box-shadow: 0px 0px 5px 0px rgba(50, 50, 50, 0.75);
+	background-color: #023047;
+}
+
 .main {
 	display: flex;
 	flex-wrap: wrap;
@@ -40,15 +47,22 @@ header input {
 }
 .card {
 	flex: 1;
-	min-width: 300px;
+	width: 300px;
+	height: 450px;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
 	font-size: 3rem;
 	margin: 5px;
-	border: 2px solid rgb(241, 231, 231);
+	margin-right: 20px;
+	border: none;
+	box-shadow: 2px 2px 3px 0px rgba(0, 0, 0, 0.45);
+	-webkit-box-shadow: 2px 2px 3px 0px rgba(0, 0, 0, 0.45);
+	-moz-box-shadow: 2px 2px 3px 0px rgba(0, 0, 0, 0.45);
 	border-radius: 20px;
+	padding: 2rem;
+	background-color: #16697a;
 }
 .card:hover {
 	border: none;
@@ -72,11 +86,11 @@ p:hover {
 	height: 300px;
 }
 .search_result {
-	height: 80vh;
+	height: 90vh;
 	width: 100%;
 	margin-left: auto;
 	margin-right: auto;
-	background-color: rgb(241, 231, 231);
+	background-color: #264653;
 	position: absolute;
 	display: flex;
 	justify-content: center;
@@ -87,10 +101,23 @@ p:hover {
 	margin-right: 2rem;
 	padding: 2rem;
 }
+.big-card {
+	margin-top: 5rem;
+	box-shadow: 2px 2px 3px 0px rgba(0, 0, 0, 0.45);
+	-webkit-box-shadow: 2px 2px 3px 0px rgba(0, 0, 0, 0.45);
+	-moz-box-shadow: 2px 2px 3px 0px rgba(0, 0, 0, 0.45);
+	max-width: 400px;
+	text-align: center;
+	background-color: #023047;
+	padding: 2rem;
+}
+.big-card img {
+	width: 20rem;
+}
 .cross {
 	height: 3px;
 	width: 30px;
-	background-color: #dd1414;
+	background-color: #ede7e3;
 	margin-top: 4px;
 	position: absolute;
 	top: 2rem;
@@ -111,9 +138,15 @@ p:hover {
 #about {
 	font-size: 1.5rem;
 	text-shadow: none;
-	color: #000;
+	color: rgb(255, 255, 255);
 	font-family: sans-serif;
 	margin-top: 1rem;
+	text-align: center;
+}
+.pokemon-details {
+	font-size: 3rem;
+	color: rgb(255, 255, 255);
+	text-align: center;
 }
 .line1 {
 	transform: rotate(-45deg) translate(-2px, 3px);
@@ -126,4 +159,15 @@ p:hover {
 }
 .none {
 	display: none;
+}
+button {
+	background-color: #e76f51;
+	border: 1px solid #e76f51;
+	color: #023047;
+	font-weight: 600;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+}
+input {
+	outline: none;
 }

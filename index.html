@@ -13,7 +13,7 @@
 		<script src="main.js" defer></script>
 		<title>PokeDex</title>
 	</head>
-	<body>
+	<body class="dark">
 		<header>
 			<h1 onclick="enable_dark_mode()">POkeDEx</h1>
 			<div>
@@ -27,23 +27,33 @@
 		</header>
 		<section class="main">
 			<div class="search_result none">
-				<img src="" alt="" id="image" />
-				<h1 id="name">HEllo</h1>
-				<p id="about">
-					Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-					Minima dicta ad eaque explicabo minus, inventore nulla sunt
-					ea cum ut, cupiditate hic saepe autem cumque at quas natus
-					quia voluptatem.
-				</p>
-				<div class="pokemon-details">
-					<div class="height">HEIGHT: 4</div>
-					<div class="order">ORDER : 234</div>
-					<div class="weight">WEIGHT : 64</div>
-					<div class="capture-rate">CAPTURE RATE : 45</div>
-				</div>
-				<div class="close">
-					<div class="cross line1"></div>
-					<div class="cross line3"></div>
+				<div class="big-card">
+					<img src="" alt="" id="image" />
+					<h1 id="name"></h1>
+					<p id="about"></p>
+					<div class="pokemon-details">
+						<div class="height"></div>
+						<div class="order"></div>
+						<div class="weight"></div>
+						<div class="capture-rate"></div>
+					</div>
+					<div class="close">
+						<div class="cross line1"></div>
+						<div class="cross line3"></div>
+					</div>
+					<img src="" alt="" id="image" />
+					<h1 id="name"></h1>
+					<p id="about"></p>
+					<div class="pokemon-details">
+						<div class="height"></div>
+						<div class="order"></div>
+						<div class="weight"></div>
+						<div class="capture-rate"></div>
+					</div>
+					<div class="close" onclick=" remove()">
+						<div class="cross line1"></div>
+						<div class="cross line3"></div>
+					</div>
 				</div>
 			</div>
 		</section>

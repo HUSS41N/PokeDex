@@ -9,7 +9,7 @@ function fetch_api(i) {
 
 // * Generate pokemon cards funtion
 function generate_pokemons() {
-	for (let i = 1; i < 200; i++) {
+	for (let i = 1; i < 250; i++) {
 		let pokemon_card = fetch_api(i);
 		pokemon_card.then((data) => {
 			const card = document.createElement("div");
@@ -54,7 +54,6 @@ search.addEventListener("click", () => {
 		fetch(new_url)
 			.then((response) => response.json())
 			.then((data) => {
-				console.log(data);
 				const about = document.querySelector("#about");
 				const order = document.querySelector(".order");
 
@@ -67,11 +66,10 @@ search.addEventListener("click", () => {
 });
 
 // * Close search results
-const close = document.querySelector(".close");
-close.addEventListener("click", () => {
+function remove() {
 	const search_results = document.querySelector(".search_result");
 	search_results.classList.add("none");
-});
+}
 
 //*  Generate pokemon cards
 generate_pokemons();
