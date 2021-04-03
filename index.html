@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="style.css" />
+		<link
+			rel="shortcut icon"
+			href="./assest/logo.png"
+			type="image/x-icon"
+		/>
+		<script src="main.js" defer></script>
+		<title>PokeDex</title>
+	</head>
+	<body>
+		<header>
+			<h1 onclick="enable_dark_mode()">POkeDEx</h1>
+			<div>
+				<input
+					type="text"
+					id="input"
+					placeholder="search for pokemon"
+				/>
+				<button id="search">Search</button>
+			</div>
+		</header>
+		<section class="main">
+			<div class="search_result none">
+				<img src="" alt="" id="image" />
+				<h1 id="name">HEllo</h1>
+				<p id="about">
+					Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+					Minima dicta ad eaque explicabo minus, inventore nulla sunt
+					ea cum ut, cupiditate hic saepe autem cumque at quas natus
+					quia voluptatem.
+				</p>
+				<div class="pokemon-details">
+					<div class="height">HEIGHT: 4</div>
+					<div class="order">ORDER : 234</div>
+					<div class="weight">WEIGHT : 64</div>
+					<div class="capture-rate">CAPTURE RATE : 45</div>
+				</div>
+				<div class="close">
+					<div class="cross line1"></div>
+					<div class="cross line3"></div>
+				</div>
+			</div>
+		</section>
+	</body>
+</html>

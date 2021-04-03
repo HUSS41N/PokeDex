@@ -1,0 +1,129 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital@1&display=swap");
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+html {
+	font-size: 62.5%;
+}
+body {
+	font-family: "Lato", sans-serif;
+	/* background-color: rgb(241, 231, 231); */
+}
+.dark {
+	transition: 0.15s ease-in-out;
+	background-color: #000;
+}
+.main {
+	display: flex;
+	flex-wrap: wrap;
+}
+header {
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	font-size: 3rem;
+	text-align: center;
+	margin: 2rem;
+	color: #fff;
+	text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
+		1px 1px 0 #000;
+	cursor: pointer;
+}
+header input {
+	padding: 2rem;
+}
+#search {
+	padding: 2rem 1rem;
+	cursor: pointer;
+}
+.card {
+	flex: 1;
+	min-width: 300px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	font-size: 3rem;
+	margin: 5px;
+	border: 2px solid rgb(241, 231, 231);
+	border-radius: 20px;
+}
+.card:hover {
+	border: none;
+	box-shadow: 2px 2px 3px 0px rgba(0, 0, 0, 0.45);
+	-webkit-box-shadow: 2px 2px 3px 0px rgba(0, 0, 0, 0.45);
+	-moz-box-shadow: 2px 2px 3px 0px rgba(0, 0, 0, 0.45);
+}
+p {
+	text-transform: uppercase;
+	color: #fff;
+	text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
+		1px 1px 0 #000;
+}
+p:hover {
+	background-color: rgb(250, 190, 112);
+	text-shadow: none;
+	color: #000;
+}
+.card img {
+	width: 300px;
+	height: 300px;
+}
+.search_result {
+	height: 80vh;
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: rgb(241, 231, 231);
+	position: absolute;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	color: #fff;
+	font-size: 2rem;
+	margin-right: 2rem;
+	padding: 2rem;
+}
+.cross {
+	height: 3px;
+	width: 30px;
+	background-color: #dd1414;
+	margin-top: 4px;
+	position: absolute;
+	top: 2rem;
+	right: 2rem;
+	cursor: pointer;
+}
+.pokemon-details {
+	margin: 2rem;
+	width: 100%;
+	text-align: left;
+}
+#name {
+	font-size: 6rem;
+	text-transform: capitalize;
+	text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
+		1px 1px 0 #000;
+}
+#about {
+	font-size: 1.5rem;
+	text-shadow: none;
+	color: #000;
+	font-family: sans-serif;
+	margin-top: 1rem;
+}
+.line1 {
+	transform: rotate(-45deg) translate(-2px, 3px);
+}
+.line2 {
+	opacity: 0;
+}
+.line3 {
+	transform: rotate(45deg) translate(1px, 3px);
+}
+.none {
+	display: none;
+}
