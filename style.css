@@ -54,8 +54,8 @@ header input {
 	justify-content: center;
 	align-items: center;
 	font-size: 3rem;
-	margin: 5px;
-	margin-right: 20px;
+	margin: 10px;
+/* 	margin-right: 20px; */
 	border: none;
 	box-shadow: 2px 2px 3px 0px rgba(0, 0, 0, 0.45);
 	-webkit-box-shadow: 2px 2px 3px 0px rgba(0, 0, 0, 0.45);
